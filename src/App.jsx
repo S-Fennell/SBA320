@@ -5,15 +5,16 @@ import { Link } from 'react-router-dom';
 import './App.css';
 import BattleField from './BattleField';
 import DragonBall from './DragonBall';
+import PokeMon from './Pokemon';
 
 function App() {
 
 
   return (
     <>
-    <nav class="navbar">
+    <nav className="navbar">
       <div>
-        <h1>POKEMON BATTLE</h1>
+        <h1>Anime Characters</h1>
       </div>
       <div className="links">
         <ul>
@@ -26,6 +27,9 @@ function App() {
           <li>
             <Link to='/dragonball'>Dragon Ball</Link>
           </li>
+            <li>
+            <Link to='/pokemon'>Pokemon</Link>
+          </li>
         </ul>
       </div>
     </nav>
@@ -34,6 +38,7 @@ function App() {
     <Routes>
       <Route path='/' element={ <Welcome/>}/>
       <Route path='/battlefield' element={<BattleField/> }/>
+      <Route path='/pokemon' element={<PokeMon/> }/>
        <Route path='/dragonball' element={ <DragonBall/> }/>
       <Route path='*' element={<Navigate to='/'/>}/>
     </Routes>
