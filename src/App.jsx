@@ -1,12 +1,12 @@
 import { useState } from 'react';
 import Welcome from './Welcome';
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes, Navigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import './App.css';
 import BattleField from './BattleField';
+import DragonBall from './DragonBall';
 
 function App() {
-
 
 
   return (
@@ -23,6 +23,9 @@ function App() {
           <li>
             <Link to='/battlefield'>The Battlefield</Link>
           </li>
+          <li>
+            <Link to='/dragonball'>Dragon Ball</Link>
+          </li>
         </ul>
       </div>
     </nav>
@@ -31,6 +34,8 @@ function App() {
     <Routes>
       <Route path='/' element={ <Welcome/>}/>
       <Route path='/battlefield' element={<BattleField/> }/>
+       <Route path='/dragonball' element={ <DragonBall/> }/>
+      <Route path='*' element={<Navigate to='/'/>}/>
     </Routes>
     </>
   )
