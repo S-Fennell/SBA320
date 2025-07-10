@@ -19,7 +19,7 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
-  background-image: url('./assets/pokeblack.png');
+  /* background-image: url('./assets/pokeblack.png'); */
 }
 
 h1 {
@@ -81,4 +81,16 @@ h1 {
   height: 50px;
   border: 2px solid;
   border-radius: 5px;
+}
+.imageDiv{
+  display: flex;
+  justify-content: center;
+  height: 500px;
+  width: 800px;
+}
+.imgDiv{
+  height: 400px;
+  width: 400px;
+  border: 2px solid black;
+  background-image: url('image/space.png;');
 }

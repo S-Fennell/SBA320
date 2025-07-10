@@ -1,11 +1,10 @@
 import { useState } from 'react';
-import Welcome from './Welcome';
 import { Route, Routes, Navigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import './App.css';
-import BattleField from './BattleField';
 import DragonBall from './DragonBall';
 import PokeMon from './Pokemon';
+import Home from './Home';
 
 function App() {
 
@@ -22,9 +21,6 @@ function App() {
             <Link to='/'>Welcome</Link>
           </li>
           <li>
-            <Link to='/battlefield'>The Battlefield</Link>
-          </li>
-          <li>
             <Link to='/dragonball'>Dragon Ball</Link>
           </li>
             <li>
@@ -36,8 +32,7 @@ function App() {
 
 
     <Routes>
-      <Route path='/' element={ <Welcome/>}/>
-      <Route path='/battlefield' element={<BattleField/> }/>
+      <Route path='/' element={<Home/> }/>
       <Route path='/pokemon' element={<PokeMon/> }/>
        <Route path='/dragonball' element={ <DragonBall/> }/>
       <Route path='*' element={<Navigate to='/'/>}/>
