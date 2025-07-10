@@ -8,7 +8,7 @@ export default function PokeMon(){
 
     const search =()=>{
         Axios.get(`https://pokeapi.co/api/v2/pokemon/${pokemon}`).then((response)=>{
-            setPokemon({name: pokemon, })
+            setPokemon({name: pokemon})
             console.log(response)
         })
     }
