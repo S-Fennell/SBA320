@@ -1,3 +1,5 @@
+I wanted make a site whre people who are interested in anime characters to look up there personal information so they can simply know everything they want to know about the characters.
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
