@@ -22,11 +22,14 @@ export default function DragonBall(){
           console.error(error);
     }
 }
-  
+  getData()
     return(
         <div>
+          <h2>Got to add a numbers 1 thruough 9 to see fighters</h2>
+          <h3>fighters only show up in the console log. api has limitations with filter</h3>
             <input type="text" />
             <button onClick={getData}>
+              
                 <h4>Get Z-Fighter</h4>
             </button>
             <input type="text" />
@@ -35,11 +38,11 @@ export default function DragonBall(){
             </button>
             <div className="imageDiv">
                 <div className="imgDiv">
-                    <img src="" alt=""/>
+                    {/* <img src="" alt=""/> */}
                 </div>
                 <div className="imgDiv">
                   <h1></h1>
-                    <img src="" alt="" />
+                    {/* <img src="" alt="" /> */}
                 </div>
             </div>
         </div>
