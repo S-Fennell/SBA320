@@ -5,6 +5,7 @@ import './App.css';
 import DragonBall from './DragonBall';
 import PokeMon from './Pokemon';
 import Home from './Home';
+import ZFigthers from './ZFighters';
 
 function App() {
 
@@ -34,7 +35,7 @@ function App() {
     <Routes>
       <Route path='/' element={<Home/> }/>
       <Route path='/pokemon' element={<PokeMon/> }/>
-       <Route path='/dragonball' element={ <DragonBall/> }/>
+      <Route path='/dragonball' element={ <DragonBall/> }/>
       <Route path='*' element={<Navigate to='/'/>}/>
     </Routes>
     </>
